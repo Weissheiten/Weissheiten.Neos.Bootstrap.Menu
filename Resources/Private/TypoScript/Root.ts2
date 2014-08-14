@@ -1,0 +1,11 @@
+// alter the prototype to apply the changes to each menu used
+prototype(TYPO3.Neos:Menu){
+    templatePath = 'resource://Weissheiten.Neos.Bootstrap.Menu/Private/Templates/TypoScriptObjects/Menu.html'
+    site = ${site}
+    site.attributes{
+        class = 'navbar-brand'
+    }
+    attributes{
+        class = 'nav navbar-nav'
+    }
+}
